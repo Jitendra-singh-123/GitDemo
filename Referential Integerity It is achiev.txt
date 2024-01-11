@@ -1,0 +1,11 @@
+Referential Integerity: It is achieved through the use of foreign keys, which establish a link between tables by referencing the primary key of another table. Referential integrity ensures that relationships between tables remain valid, meaning that any foreign key in one table must correspond to a primary key in another table.
+
+Domain integrity:
+It ensures that data stored in a particular column adheres to the defined data type, constraints for that column
+For example, if a column is defined to store only numeric values, domain integrity ensures that non-numeric values are not allowed in that column.
+
+Unique integrity:
+Similarly, if a column has a UNIQUE constraint, it ensures that each value in that column is unique across the entire table.
+
+Entity Intgerity:
+In short, it ensures that each entity (or row) in a table is uniquely identifiable and that the key attribute(s) used for identification is not allowed to have missing or null values.

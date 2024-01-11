@@ -1,0 +1,3 @@
+Strong Entity: Can be uniquely identified by its own attributes; has a primary key.
+
+Weak Entity: Cannot be uniquely identified by its own attributes; depends on another entity for identification and typically lacks a primary key on its own.

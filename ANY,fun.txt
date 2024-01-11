@@ -1,0 +1,19 @@
+The ANY operator :
+Any operator in SQL is used in combination with a subquery to compare a value to any value that satisfies the condition specified in the subquery. 
+The ANY operator returns TRUE if the comparison holds true for at least one value in the result set of the subquery; otherwise, it returns FALSE.
+
+-- Find employees with a salary greater than any manager's salary
+SELECT employee_name
+FROM employees
+WHERE salary > ANY (SELECT salary FROM managers);
+
+
+DATEDIFF(date_part, start_date, end_date)
+This function is used to determine the difference between two dates. For example,
+
+SELECT DATEDIFF(month, '2020-12-31', '2022-01-01');
+-- output: 13
+
+SUBSTRING(string_expression, start, length)
+-- Extract a substring starting from the 3rd position with a length of 5 characters
+SELECT SUBSTRING('Hello, World!', 3, 5) AS Result; //llo
