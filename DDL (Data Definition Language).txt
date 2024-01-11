@@ -1,0 +1,27 @@
+DDL (Data Definition Language):
+Used for defining and managing the structure of a database.
+Includes commands like CREATE, ALTER, DROP, and TRUNCATE.
+
+DML (Data Manipulation Language):
+Used for manipulating and interacting with the data in a database.
+Includes commands like SELECT, INSERT, UPDATE, and DELETE.
+
+TCL (Transaction Control Language):
+Manages transactions within a database.
+Commands include COMMIT, ROLLBACK, SAVEPOINT, and others.
+
+DCL (Data Control Language):
+Manages access and permissions to database objects.
+Commands include GRANT and REVOKE
+
+DELETE:
+Purpose: The DELETE statement is used to remove one or more rows from a table based on a specified condition.
+DELETE FROM TableName WHERE Condition;
+
+DROP:
+Purpose: The DROP statement is used to remove an entire database object, such as a table, index, or view.
+DROP TABLE TableName;
+
+TRUNCATE:
+Purpose: The TRUNCATE statement is used to remove all rows from a table quickly, but it retains the structure of the table for future use.
+TRUNCATE TABLE TableName;

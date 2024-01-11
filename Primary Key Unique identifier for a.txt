@@ -1,0 +1,57 @@
+Primary Key: Unique identifier for a record, and each table typically has one.
+
+Alternate Key: Candidate key not chosen as the primary key.
+
+Composite Key: Key composed of multiple attributes.
+
+Candidate Key: Set of attributes that can uniquely identify a record.
+
+Super Key: Set of attributes that can uniquely identify a record, possibly with more attributes than necessary.
+
+Difference in primary vs unique
+A primary key is a key that uniquely identifies each record in a table but cannot store NULL values.
+
+Unique:
+In contrast, a unique key prevents duplicate values in a column and can store NULL values.
+
+Strong Entity: Can be uniquely identified by its own attributes; has a primary key.
+
+Weak Entity: Cannot be uniquely identified by its own attributes; depends on another entity for identification and typically lacks a primary key on its own
+
+
+Simple Attributes: Basic, indivisible attributes.
+
+Composite Attributes: Composed of multiple simple attributes.
+
+Single-Valued Attributes: Hold a single value.
+
+Multi-Valued Attributes: Can hold multiple values.
+
+Derived Attributes: Computed or derived from other attributes.
+
+Complex Attributes: Rarely used attributes that can be further divided into sub-parts.
+
+
+
+StudentID (Primary Key)
+RollNumber (Alternate Key)
+FirstName
+LastName
+BirthDate
+PhoneNumber
+Email
+
+Primary Key (StudentID):
+The StudentID uniquely identifies each student in the table. It serves as the primary key, ensuring that no two students have the same ID.
+
+Alternate Key (RollNumber):
+The RollNumber is an alternate key, meaning it could also serve as a primary key if needed. It provides an alternative unique identifier for each student.
+
+Composite Key (FirstName + LastName):
+The combination of FirstName and LastName forms a composite key. Together, they can uniquely identify a student, but individually, they may not be unique.
+
+Candidate Key (PhoneNumber):
+The PhoneNumber is a candidate key. While it might not be chosen as the primary key, it is a unique identifier and could serve as an alternative key.
+
+Superkey (StudentID + PhoneNumber):
+The combination of StudentID and PhoneNumber forms a superkey. A superkey is any combination of attributes that uniquely identifies a tuple in a table. 

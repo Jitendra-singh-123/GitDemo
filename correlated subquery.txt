@@ -1,0 +1,8 @@
+correlated subquery:
+In other words, the subquery is dependent on the outer query, and the subquery is executed for each row processed by the outer query.
+
+SELECT employee_id, employee_name, salary
+FROM employees e1
+WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e2.department_id = e1.department_id);
+
+The subquery is correlated because it refers to the e1.department_id from the outer query. For each row processed by the outer query, the subquery is executed with a specific department context.

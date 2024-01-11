@@ -1,0 +1,11 @@
+Simple Attributes: Basic, indivisible attributes.
+
+Composite Attributes: Composed of multiple simple attributes.
+
+Single-Valued Attributes: Hold a single value.
+
+Multi-Valued Attributes: Can hold multiple values.
+
+Derived Attributes: Computed or derived from other attributes.
+
+Complex Attributes: Rarely used attributes that can be further divided into sub-parts.
